@@ -1,0 +1,45 @@
+body{
+    background-color: gray;
+    color: white;
+    border: 2px solid cornflowerblue;
+    
+}
+h1{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 3em;
+}
+h2{
+ font-size: 2em;
+}
+a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 1.5em; 
+}
+.learnmore{
+    text-align: left;
+    color: cornflowerblue;
+    font-size: 1em;
+
+}
+.gallery{
+    text-align: center;
+}
+.gallery_pic{
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+.show_pic {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+.show{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
