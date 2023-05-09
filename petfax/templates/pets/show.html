@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>PetFax | Show Page</title>
+    <title>PetFax | Pet Page</title>
 </head>
 <body>
-    <div class="container">
-        <section class="show">
+    <div class="show-container">
+        <div class="show">
             <H1>{{ pet.pet_name}}</H1>
                 <img class="show_pic" src="{{ pet.pet_photo }}" alt="pet photo"/>
                 <h3> Some Facts about {{ pet.pet_name}}.</h3>
                 <p> {{ pet.pet_fact }}. </p>
-        </section>
+        </div>
         <div>
             <a href="/pets"> ⬅️ Back</a>
         </div>

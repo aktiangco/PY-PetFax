@@ -23,17 +23,23 @@ a{
     font-size: 1em;
 
 }
-.gallery{
+.gallery-container{
     text-align: center;
+    
 }
+/* .gallery-container :nth-child(){
+    flex-grow: 2;
+} */
+
+
 .gallery_pic{
-    width: 500px;
-    height: 500px;
-    object-fit: contain;
+    width: 50%;
+    border-radius: 10px;
 }
 .show_pic {
     width: 500px;
     height: 500px;
+    border-radius: 10px;
     object-fit: contain;
 }
 .show{
@@ -42,4 +48,6 @@ a{
 
 footer{
     text-align: center;
+    padding: 10px;
+    margin: 10px;
 }
