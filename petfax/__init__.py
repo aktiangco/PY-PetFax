@@ -1,16 +1,18 @@
-from flask import Flask  # importing flask
+# config                    
+from flask import Flask
 
-def create_app(): 
-    app = Flask(__name__) # Create an app instance from Flask. Be sure to pass it the special dunder variable
+# factory
+def create_app():
+    app = Flask(__name__)
 
-    #home route
-    @app.route('/') 
-    def hello(): 
+    # index route
+    @app.route('/')
+    def index(): 
         return 'Hello, PetFax!'
 
-    # pets index route
-    @app.route('/pets')
-    def pets(): 
-        return 'These are our pets available for adoption!'
+    # register pet blueprint 
+    from . import pet 
+    app.register_blueprint(pet.bp)
 
+    # return the app 
     return app
