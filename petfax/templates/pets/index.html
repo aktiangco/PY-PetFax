@@ -10,9 +10,15 @@
 <body>
     <div>
         <H1>Welcome to PetFax</H1>
+        <div class="message">
+            <p>
+                "Welcome to our Friendly Pet View Page! Discover heartwarming stories and adorable companions. Find your perfect match, let their unconditional love brighten your days. Start your companionship journey today!"
+            </p>
+        </div>
         <div class="gallery-container">
-            <div>
-                {% for pet in pets %}        
+            
+                {% for pet in pets %}   
+                <div class="card">     
                 <div> 
                     <H2>{{ pet.pet_name }}</H2>  
                 </div>
@@ -20,14 +26,17 @@
                     <img class="gallery_pic" src="{{ pet.pet_photo }}" alt="pet photo"/>
                 </div>
                 <div>
-                    <a class="learnmore" href="/pets/{{ pet.pet_id }}">Learn more ➡️</a>
+                    <a class="link" href="/pets/{{ pet.pet_id }}">Learn more -></a>
                 </div>
-                {% endfor %}
             </div>
+                {% endfor %}
         </div>
-    </div>    
+        <div class="funfacts">
+            We'd love to learn more fun facts! <a class="link" href="/facts/new">Submit some here.</a>
+        </div>
+    </div>  
     <footer>
-        <div>Hello beautiful people, please adopt a friend</div>
+        <p>"Embrace the joy of companionship and make a difference in a furry friend's life. Open your heart and home to a loving pet, and together, let's create a world filled with compassion and friendship.</p>
     </footer>    
 </body>
 </html>

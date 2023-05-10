@@ -1,51 +1,108 @@
 body{
     background-color: gray;
     color: white;
-    border: 2px solid cornflowerblue;
+    border: 2px solid black;
+    border-radius: 5px;
     
 }
 h1{
     text-align: center;
-    color: cornflowerblue;
+    color: yellow;
     font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 5px;
 }
 h2{
+ text-align: center;
  font-size: 2em;
+ color: yellow;
 }
-a{
-    color: cornflowerblue;
-    text-decoration: none;
-    font-size: 1.5em; 
-}
-.learnmore{
-    text-align: left;
-    color: cornflowerblue;
-    font-size: 1em;
 
-}
 .gallery-container{
-    text-align: center;
-    
+    text-align: row;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
 }
-/* .gallery-container :nth-child(){
-    flex-grow: 2;
-} */
+
+.card{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+.funfacts{
+    justify-content: center;
+    text-align: center;
+}
+
+.link{
+    text-align: left;
+    color: white;
+    font-size: 1em;
+}
 
 
-.gallery_pic{
+
+.gallery_pic, .show_pic{
     width: 50%;
     border-radius: 10px;
+    border: 2px solid black;
 }
-.show_pic {
-    width: 500px;
-    height: 500px;
+.show_pic{
+    width: 50%;
     border-radius: 10px;
-    object-fit: contain;
-}
-.show{
-    text-align: center;
+    border: 2px solid black;
 }
 
+.show-container{
+    text-align: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.show{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.facts-container{
+    text-align: row;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+.form{
+    flex-direction: column;
+}
+.submit{
+    text-align: left;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 1em;
+}
+.message{
+    text-align: center;
+    color: white;
+    background-color: salmon;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+
+}
 footer{
     text-align: center;
     padding: 10px;

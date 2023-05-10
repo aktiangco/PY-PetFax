@@ -9,15 +9,18 @@
 </head>
 <body>
     <div class="show-container">
+        <H1>{{ pet.pet_name}}</H1>
         <div class="show">
-            <H1>{{ pet.pet_name}}</H1>
+            <h3> Some Facts about {{ pet.pet_name}}.</h3>
+            <p> {{ pet.pet_fact }}. </p>
                 <img class="show_pic" src="{{ pet.pet_photo }}" alt="pet photo"/>
-                <h3> Some Facts about {{ pet.pet_name}}.</h3>
-                <p> {{ pet.pet_fact }}. </p>
         </div>
         <div>
-            <a href="/pets"> ⬅️ Back</a>
+            <a class="link" href="/pets"> <-Back</a>
         </div>
     </div>
+    <footer>
+        <p>"Embrace the joy of companionship and make a difference in a furry friend's life. Open your heart and home to a loving pet, and together, let's create a world filled with compassion and friendship.</p>
+    </footer>  
 </body>
 </html>
