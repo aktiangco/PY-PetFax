@@ -16,14 +16,35 @@
 
 ## Installint Flask-SQLAlchemy
 
-- to install Flask-SQLAlchemy: `pip install Flask-SQLAlchemy`
+- to install Flask-SQLAlchemy: `pip install flask-sqlalchemy`
+- Migrate tools
+  - to migrate: 
+    `pip install Flask-Migrate`
+  
+  - install a Postgres database adapter: 
+    `pip install psycopg2-binary`
+  
+  - Initialize the app for migrations
+    `flask db init`
+  
+  - Generate the migration files
+    `flask db migrate`
+  
+  - Apply the migration to the database
+    `flask db upgrade`
 
+## Installing python .evv
 
+- Install .env: `pip install python-dotenv`
+- create .env file 
 
+<!-- 
+from dotenv import load_dotenv
+import os # to access environment variables using "os.environ"
 
+load_dotenv() # Load environment variables from .env file -->
 
-
-Sources for photos used: 
+### Sources for photos used:
 
 - Dog: [Karseten Winegeart on Unsplash](https://unsplash.com/photos/5PVXkqt2s9k)
 - Cat: [Alvan Nee on Unsplash](https://unsplash.com/photos/ZCHj_2lJP00)
