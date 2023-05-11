@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>PetFax | Submit New Page</title>
+    <title>PetFax | Submit New Facts</title>
 </head>
 <body>
     <H1>Submit Fax</H1>
     <div class="message">
         <p>
-           info here
+            Leave a heartfelt message on our new pet's info page. Be part of their journey with words of love and encouragement. Your warm welcome will make their transition even more special. Show them they are cherished.
         </p>
     </div>
     <div class="facts-container">
-        <div>
+        <div class="forms-container">
             <form class="form" action="/facts" method="POST">
             <div>
-                <label for="submitter">Name</label>
+                <label for="submitter">Name: </label>
                 <input type="text" id="submitter" name="submitter" required>
             </div>
             <br/>
             <div> 
-                <label for="fact">Fact:</label>
+                <label for="fact"> Fun Fact: </label>
                 <textarea id="fact" name="fact" required></textarea>
             </div>
             <br/>
@@ -33,8 +33,14 @@
           </form>
         </div>
     </div>
-    <div>
-        <a class="link" href="/pets"> <-Back</a>
+
+    <div class="buttons">
+        <div>
+            <a class="link" href="/pets"> <- Back </a>
+        </div>
+        <div>
+            <a class="link" href="/facts"> Facts -> </a>
+        </div>
     </div>
     <footer>
         <p>"Embrace the joy of companionship and make a difference in a furry friend's life. Open your heart and home to a loving pet, and together, let's create a world filled with compassion and friendship.</p>

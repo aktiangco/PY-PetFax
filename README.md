@@ -36,13 +36,14 @@
 ## Installing python .evv
 
 - Install .env: `pip install python-dotenv`
-- create .env file 
+- create .env file
 
 <!-- 
 from dotenv import load_dotenv
 import os # to access environment variables using "os.environ"
 
-load_dotenv() # Load environment variables from .env file -->
+load_dotenv() # Load environment variables from .env file 
+-->
 
 ### Sources for photos used:
 

@@ -49,8 +49,11 @@ h2{
     color: white;
     font-size: 1em;
 }
-
-
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 
 .gallery_pic, .show_pic{
     width: 50%;
@@ -84,9 +87,17 @@ h2{
     display: flex;
     padding: 10px;
 }
-.form{
-    flex-direction: column;
+.forms-container{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    flex-grow: 1;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
 }
+
 .submit{
     text-align: left;
     color: white;
@@ -101,8 +112,26 @@ h2{
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
-
 }
+
+
+.user-container{
+    text-align: row;
+    justify-content: center;
+    display: row;
+    padding: 10px;
+}
+
+.user-card{
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
 footer{
     text-align: center;
     padding: 10px;

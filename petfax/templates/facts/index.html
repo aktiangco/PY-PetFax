@@ -11,17 +11,31 @@
     <H1>User Fax</H1>
     <div class="message">
         <p>
-            "User facts"
+            "Meet friends and their beloved pets, bound by love and joy."
         </p>
     </div> 
-    <div>
-        <h3>
-            Hello
-        </h3>    
+    <div class="user-container">
+        {% for fact in facts %}
+            <div class="user-card">
+                <div>
+                    "{{ fact.fact }}""
+                    <h4>Submitted by <b>{{ fact.submitter }}</b></h4>
+                </div>
+            </div>    
+        {% endfor %}
     </div>
-
+    <div class="buttons">
+        <div>
+            <a class="link" href="/pets"> <- Back </a>
+        </div>
+        <div>
+            <a class="link" href="/facts"> Facts -> </a>
+        </div>
+    </div>
     <footer>
         <p>"Embrace the joy of companionship and make a difference in a furry friend's life. Open your heart and home to a loving pet, and together, let's create a world filled with compassion and friendship.</p>
     </footer> 
 </body>
 </html>
+
+

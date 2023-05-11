@@ -3,7 +3,7 @@ from flask import Flask
 from dotenv import load_dotenv
 import os
 load_dotenv()
-POSTGRES = os.environ.get("POSTGRES") #to access .env file
+POSTGRES = os.environ.get("POSTGRES") #to fetch from .env file
 from flask_migrate import Migrate
 
 # factory
