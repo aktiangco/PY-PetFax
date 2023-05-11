@@ -1,3 +1,5 @@
+# PetFax Activity
+
 ## Installation venv (virtual enviroment)
 
 - to install venv: `python3 -m venv venv`
@@ -11,6 +13,15 @@
   - "localhost:5000"
   - "http://127.0.0.1:5000/"
 - to Constantly reload: `flask run --reload`
+
+## Installint Flask-SQLAlchemy
+
+- to install Flask-SQLAlchemy: `pip install Flask-SQLAlchemy`
+
+
+
+
+
 
 Sources for photos used: 
 
